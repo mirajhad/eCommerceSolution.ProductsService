@@ -10,7 +10,7 @@ namespace DataAccessLayer.RepositoryContracts
         Task<IEnumerable<Product>> GetProducts();
         Task<Product?> GetProductByCondition(Expression<Func<Product, bool>> conditionexpression);
         Task<IEnumerable<Product?>> GetProductsByCondition(Expression<Func<Product, bool>> conditionexpression);
-        Task<Product?> AddProdcut(Product product);
+        Task<Product?> AddProduct(Product product);
         Task<Product?> UpdateProduct(Product product);
         Task<bool> DeleteProduct(Guid productID);
     }

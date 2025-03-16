@@ -20,7 +20,7 @@ namespace DataAccessLayer.Repositories
             _context = context;
         }
 
-        public async Task<Product?> AddProdcut(Product product)
+        public async Task<Product?> AddProduct(Product product)
         {
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
