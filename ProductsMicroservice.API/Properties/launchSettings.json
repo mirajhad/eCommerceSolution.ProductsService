@@ -12,7 +12,7 @@
         "MYSQL_PASSWORD": "1234"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5015"
+      "applicationUrl": "http://localhost:8080"
     },
     "https": {
       "commandName": "Project",
