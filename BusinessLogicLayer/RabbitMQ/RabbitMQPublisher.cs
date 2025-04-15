@@ -38,7 +38,7 @@ namespace BusinessLogicLayer.RabbitMQ
             byte[] messageBodyInBytes= Encoding.UTF8.GetBytes(messageJson);
 
             // Declare the exchange if it doesn't exist
-            string exchangeName = "products.exchange";
+            string exchangeName = _configuration["RabbitMQ_Products_Exchange"]!;
             _channel.ExchangeDeclare(exchange: exchangeName, type: ExchangeType.Direct, durable: true);
 
             //Publish the message to the exchange
